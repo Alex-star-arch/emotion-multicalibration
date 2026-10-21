@@ -1,0 +1,338 @@
+{
+ "Gemma-2-9B|GoEmotions": {
+  "modality": "text",
+  "n": 1400,
+  "eval_family": "emo_x_ambig",
+  "methods": {
+   "Pooled-Iso": {
+    "cw_ece_mean": 0.2318713071748964,
+    "cw_ece_sd": 0.01504905722219722,
+    "gap_pp_mean": 0.29250777798935684,
+    "n_def_groups_cal": 1.0,
+    "cal_samples_per_group": 980.0
+   },
+   "Group-Iso(emotion)": {
+    "cw_ece_mean": 0.15224613419119304,
+    "cw_ece_sd": 0.004250729979115593,
+    "gap_pp_mean": 0.3100517002184037,
+    "n_def_groups_cal": 7.0,
+    "cal_samples_per_group": 140.0
+   },
+   "Group-Iso[C_emo]": {
+    "cw_ece_mean": 0.14194120790792336,
+    "cw_ece_sd": 0.013576491316894236,
+    "gap_pp_mean": 0.3374267670482635,
+    "n_def_groups_cal": 21.0,
+    "cal_samples_per_group": 46.666666666666664
+   },
+   "GenericMC(emo x confbin10)": {
+    "cw_ece_mean": 0.177216723717608,
+    "cw_ece_sd": 0.01214825021150777,
+    "gap_pp_mean": 0.33352510474775005,
+    "n_def_groups_cal": 49.6,
+    "cal_samples_per_group": 19.758064516129032
+   },
+   "GenericMC(confbin10 x ambig)": {
+    "cw_ece_mean": 0.23394020967431062,
+    "cw_ece_sd": 0.015784490759313055,
+    "gap_pp_mean": 0.39019956525018706,
+    "n_def_groups_cal": 26.0,
+    "cal_samples_per_group": 37.69230769230769
+   },
+   "GenericMC(emo x confbin10 x ambig)": {
+    "cw_ece_mean": 0.19178089723556094,
+    "cw_ece_sd": 0.015032417636086022,
+    "gap_pp_mean": 0.3985877694245975,
+    "n_def_groups_cal": 104.6,
+    "cal_samples_per_group": 9.369024856596559
+   },
+   "HKRR(official pkg)": {
+    "cw_ece_mean": 0.3688556302013307,
+    "n_unique_outputs": 8,
+    "test_ece": 0.35829815957523525,
+    "uncalibrated_test_ece": 0.35822016483261476,
+    "note": "degenerate: invariant to max_iter/use_oracle/subgroup family; outputs only 10 distinct values (one per confidence bin)"
+   }
+  }
+ },
+ "Llama-3-8B|GoEmotions": {
+  "modality": "text",
+  "n": 1400,
+  "eval_family": "emo_x_ambig",
+  "methods": {
+   "Pooled-Iso": {
+    "cw_ece_mean": 0.25552451743911453,
+    "cw_ece_sd": 0.01262228709413594,
+    "gap_pp_mean": 0.3550412914489182,
+    "n_def_groups_cal": 1.0,
+    "cal_samples_per_group": 980.0
+   },
+   "Group-Iso(emotion)": {
+    "cw_ece_mean": 0.13890537444240822,
+    "cw_ece_sd": 0.020063526573962095,
+    "gap_pp_mean": 0.27371897942908724,
+    "n_def_groups_cal": 7.0,
+    "cal_samples_per_group": 140.0
+   },
+   "Group-Iso[C_emo]": {
+    "cw_ece_mean": 0.13170101053114797,
+    "cw_ece_sd": 0.010416308403854192,
+    "gap_pp_mean": 0.25450131658468333,
+    "n_def_groups_cal": 21.0,
+    "cal_samples_per_group": 46.666666666666664
+   },
+   "GenericMC(emo x confbin10)": {
+    "cw_ece_mean": 0.19476676817940713,
+    "cw_ece_sd": 0.01431360816101016,
+    "gap_pp_mean": 0.33124703607543904,
+    "n_def_groups_cal": 68.8,
+    "cal_samples_per_group": 14.24418604651163
+   },
+   "GenericMC(confbin10 x ambig)": {
+    "cw_ece_mean": 0.26259298533909503,
+    "cw_ece_sd": 0.015051850252377045,
+    "gap_pp_mean": 0.4777402335006582,
+    "n_def_groups_cal": 30.0,
+    "cal_samples_per_group": 32.666666666666664
+   },
+   "GenericMC(emo x confbin10 x ambig)": {
+    "cw_ece_mean": 0.20072409607520317,
+    "cw_ece_sd": 0.01045233447846635,
+    "gap_pp_mean": 0.42843674270452003,
+    "n_def_groups_cal": 174.2,
+    "cal_samples_per_group": 5.625717566016074
+   },
+   "HKRR(official pkg)": {
+    "cw_ece_mean": 0.3350698179372231,
+    "n_unique_outputs": 10,
+    "test_ece": 0.2515137979827892,
+    "uncalibrated_test_ece": 0.25389683468106555,
+    "note": "degenerate: invariant to max_iter/use_oracle/subgroup family; outputs only 10 distinct values (one per confidence bin)"
+   }
+  }
+ },
+ "Qwen2.5-7B|GoEmotions": {
+  "modality": "text",
+  "n": 1400,
+  "eval_family": "emo_x_ambig",
+  "methods": {
+   "Pooled-Iso": {
+    "cw_ece_mean": 0.1945700027868659,
+    "cw_ece_sd": 0.010955797652010227,
+    "gap_pp_mean": 0.2733242629897412,
+    "n_def_groups_cal": 1.0,
+    "cal_samples_per_group": 980.0
+   },
+   "Group-Iso(emotion)": {
+    "cw_ece_mean": 0.17413446644184405,
+    "cw_ece_sd": 0.01205765423309457,
+    "gap_pp_mean": 0.3404404913946833,
+    "n_def_groups_cal": 7.0,
+    "cal_samples_per_group": 140.0
+   },
+   "Group-Iso[C_emo]": {
+    "cw_ece_mean": 0.17857165671663444,
+    "cw_ece_sd": 0.013527722262957299,
+    "gap_pp_mean": 0.35409255538179074,
+    "n_def_groups_cal": 21.0,
+    "cal_samples_per_group": 46.666666666666664
+   },
+   "GenericMC(emo x confbin10)": {
+    "cw_ece_mean": 0.2014595275928722,
+    "cw_ece_sd": 0.014620680804082065,
+    "gap_pp_mean": 0.32679237795686944,
+    "n_def_groups_cal": 44.2,
+    "cal_samples_per_group": 22.171945701357465
+   },
+   "GenericMC(confbin10 x ambig)": {
+    "cw_ece_mean": 0.19934733114297035,
+    "cw_ece_sd": 0.004614064262173822,
+    "gap_pp_mean": 0.31572910863035697,
+    "n_def_groups_cal": 21.8,
+    "cal_samples_per_group": 44.95412844036697
+   },
+   "GenericMC(emo x confbin10 x ambig)": {
+    "cw_ece_mean": 0.21671282669428077,
+    "cw_ece_sd": 0.017309380338095384,
+    "gap_pp_mean": 0.3544480586562467,
+    "n_def_groups_cal": 94.0,
+    "cal_samples_per_group": 10.425531914893616
+   },
+   "HKRR(official pkg)": {
+    "cw_ece_mean": 0.3879027170120997,
+    "n_unique_outputs": 7,
+    "test_ece": 0.3693444478884352,
+    "uncalibrated_test_ece": 0.37388915842674,
+    "note": "degenerate: invariant to max_iter/use_oracle/subgroup family; outputs only 10 distinct values (one per confidence bin)"
+   }
+  }
+ },
+ "Qwen2.5-3B|GoEmotions": {
+  "modality": "text",
+  "n": 1400,
+  "eval_family": "emo_x_ambig",
+  "methods": {
+   "Pooled-Iso": {
+    "cw_ece_mean": 0.21186467170466824,
+    "cw_ece_sd": 0.013944603631733164,
+    "gap_pp_mean": 0.31500298830770446,
+    "n_def_groups_cal": 1.0,
+    "cal_samples_per_group": 980.0
+   },
+   "Group-Iso(emotion)": {
+    "cw_ece_mean": 0.1617542567138777,
+    "cw_ece_sd": 0.005313832979673059,
+    "gap_pp_mean": 0.3109538146378802,
+    "n_def_groups_cal": 7.0,
+    "cal_samples_per_group": 140.0
+   },
+   "Group-Iso[C_emo]": {
+    "cw_ece_mean": 0.16192905575439814,
+    "cw_ece_sd": 0.014014638515821146,
+    "gap_pp_mean": 0.3324926621177054,
+    "n_def_groups_cal": 21.0,
+    "cal_samples_per_group": 46.666666666666664
+   },
+   "GenericMC(emo x confbin10)": {
+    "cw_ece_mean": 0.19794321941489038,
+    "cw_ece_sd": 0.0053658989095575855,
+    "gap_pp_mean": 0.35672112673408307,
+    "n_def_groups_cal": 47.2,
+    "cal_samples_per_group": 20.76271186440678
+   },
+   "GenericMC(confbin10 x ambig)": {
+    "cw_ece_mean": 0.23233135249571357,
+    "cw_ece_sd": 0.016748332093729522,
+    "gap_pp_mean": 0.44340768128872465,
+    "n_def_groups_cal": 23.4,
+    "cal_samples_per_group": 41.88034188034188
+   },
+   "GenericMC(emo x confbin10 x ambig)": {
+    "cw_ece_mean": 0.20251911287457683,
+    "cw_ece_sd": 0.021217455789001024,
+    "gap_pp_mean": 0.44275139151253795,
+    "n_def_groups_cal": 104.6,
+    "cal_samples_per_group": 9.369024856596559
+   },
+   "HKRR(official pkg)": {
+    "cw_ece_mean": 0.4162235108003456,
+    "n_unique_outputs": 9,
+    "test_ece": 0.390673960504977,
+    "uncalibrated_test_ece": 0.3907612174660609,
+    "note": "degenerate: invariant to max_iter/use_oracle/subgroup family; outputs only 10 distinct values (one per confidence bin)"
+   }
+  }
+ },
+ "Qwen2.5-VL-3B|GoEmotions": {
+  "modality": "text",
+  "n": 1400,
+  "eval_family": "emo_x_ambig",
+  "methods": {
+   "Pooled-Iso": {
+    "cw_ece_mean": 0.21690210215507172,
+    "cw_ece_sd": 0.01657810044253709,
+    "gap_pp_mean": 0.30768911041689306,
+    "n_def_groups_cal": 1.0,
+    "cal_samples_per_group": 980.0
+   },
+   "Group-Iso(emotion)": {
+    "cw_ece_mean": 0.17569773170499328,
+    "cw_ece_sd": 0.02459789245037181,
+    "gap_pp_mean": 0.30868634528899086,
+    "n_def_groups_cal": 7.0,
+    "cal_samples_per_group": 140.0
+   },
+   "Group-Iso[C_emo]": {
+    "cw_ece_mean": 0.16202810707634252,
+    "cw_ece_sd": 0.017564487355064766,
+    "gap_pp_mean": 0.29719665700762554,
+    "n_def_groups_cal": 21.0,
+    "cal_samples_per_group": 46.666666666666664
+   },
+   "GenericMC(emo x confbin10)": {
+    "cw_ece_mean": 0.2227304347360565,
+    "cw_ece_sd": 0.013278304452898121,
+    "gap_pp_mean": 0.35672589407364896,
+    "n_def_groups_cal": 63.2,
+    "cal_samples_per_group": 15.50632911392405
+   },
+   "GenericMC(confbin10 x ambig)": {
+    "cw_ece_mean": 0.21299275841532736,
+    "cw_ece_sd": 0.01909833270398293,
+    "gap_pp_mean": 0.29444307742145304,
+    "n_def_groups_cal": 30.0,
+    "cal_samples_per_group": 32.666666666666664
+   },
+   "GenericMC(emo x confbin10 x ambig)": {
+    "cw_ece_mean": 0.24579737520755124,
+    "cw_ece_sd": 0.0055777873188107095,
+    "gap_pp_mean": 0.467507352131132,
+    "n_def_groups_cal": 168.0,
+    "cal_samples_per_group": 5.833333333333333
+   },
+   "HKRR(official pkg)": {
+    "cw_ece_mean": 0.2709088120282649,
+    "n_unique_outputs": 10,
+    "test_ece": 0.1392061297233383,
+    "uncalibrated_test_ece": 0.13919106966170064,
+    "note": "degenerate: invariant to max_iter/use_oracle/subgroup family; outputs only 10 distinct values (one per confidence bin)"
+   }
+  }
+ },
+ "LLaVA(RAF)|RAF-DB": {
+  "modality": "vision",
+  "n": 1400,
+  "eval_family": "emo_x_gender",
+  "methods": {
+   "Pooled-Iso": {
+    "cw_ece_mean": 0.3145946301891728,
+    "cw_ece_sd": 0.009529298270555823,
+    "gap_pp_mean": 0.4048210052426497,
+    "n_def_groups_cal": 1.0,
+    "cal_samples_per_group": 980.0
+   },
+   "Group-Iso(emotion)": {
+    "cw_ece_mean": 0.050840418168385935,
+    "cw_ece_sd": 0.009038811450530176,
+    "gap_pp_mean": 0.2693320575639124,
+    "n_def_groups_cal": 7.0,
+    "cal_samples_per_group": 140.0
+   },
+   "Group-Iso[C_emo]": {
+    "cw_ece_mean": 0.0519634099415756,
+    "cw_ece_sd": 0.010162733728386355,
+    "gap_pp_mean": 0.3578223031395759,
+    "n_def_groups_cal": 20.6,
+    "cal_samples_per_group": 47.57281553398058
+   },
+   "GenericMC(emo x confbin10)": {
+    "cw_ece_mean": 0.0650527209600967,
+    "cw_ece_sd": 0.0064048263507426005,
+    "gap_pp_mean": 0.27278999498322354,
+    "n_def_groups_cal": 59.6,
+    "cal_samples_per_group": 16.44295302013423
+   },
+   "GenericMC(confbin10 x ambig)": {
+    "cw_ece_mean": 0.30643582750359305,
+    "cw_ece_sd": 0.016595354388049953,
+    "gap_pp_mean": 0.730304638934516,
+    "n_def_groups_cal": 29.8,
+    "cal_samples_per_group": 32.88590604026846
+   },
+   "GenericMC(emo x confbin10 x ambig)": {
+    "cw_ece_mean": 0.0755508677025796,
+    "cw_ece_sd": 0.012968529919467502,
+    "gap_pp_mean": 0.39419999099586783,
+    "n_def_groups_cal": 135.8,
+    "cal_samples_per_group": 7.216494845360824
+   },
+   "HKRR(official pkg)": {
+    "cw_ece_mean": 0.3467802313905601,
+    "n_unique_outputs": 10,
+    "test_ece": 0.08005377678665139,
+    "uncalibrated_test_ece": 0.08001722565719059,
+    "note": "degenerate: invariant to max_iter/use_oracle/subgroup family; outputs only 10 distinct values (one per confidence bin)"
+   }
+  }
+ }
+}
